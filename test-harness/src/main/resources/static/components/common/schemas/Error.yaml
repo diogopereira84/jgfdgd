@@ -1,0 +1,14 @@
+type: object
+required:
+  - message
+properties:
+  field:
+    description: >-
+      The requested field that is invalid. If it is a nested field, you can
+      access it using dots; for example, foo.bar. If it is an array, you can
+      access it using an index; for example, foos[0].bar. If the error is not
+      related to a specific request field, this property will not be shown in
+      the response object.
+    type: string
+  message:
+    type: string

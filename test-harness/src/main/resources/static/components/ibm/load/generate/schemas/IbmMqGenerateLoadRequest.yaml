@@ -1,0 +1,8 @@
+type: object
+required:
+  - loadProfileList
+properties:
+  loadProfileList:
+    type: array
+    items:
+      $ref: ../../../../common/schemas/ibm/LoadProfiles.yaml

@@ -1,0 +1,60 @@
+type: object
+required:
+  - correlationId
+  - status
+  - outgoingMessageId
+  - outgoingConnectionId
+  - incomingMessageId
+  - incomingConnectionId
+properties:
+  correlationId:
+    type: string
+    format: uuid
+  deliveryTrackingId:
+    type: string
+  source:
+    type: string
+  receivedDateTime:
+    type: string
+    format: date
+    example: '2025-04-30T12:41:00Z'
+  outgoingMessageId:
+    type: string
+  outgoingConnectionId:
+    type: string
+  outgoingProtocol:
+    type: string
+    enum:
+      - IBM_MQ
+      - MATIP
+  outgoingFormat:
+    type: string
+    enum:
+      - TYPE_B
+      - TYPE_X
+  incomingMessageId:
+    type: string
+  incomingConnectionId:
+    type: string
+  incomingProtocol:
+    type: string
+    enum:
+      - IBM_MQ
+      - MATIP
+  incomingFormat:
+    type: string
+    enum:
+      - TYPE_B
+      - TYPE_X
+  status:
+    type: string
+    enum:
+      - DISPATCHED,
+      - DELIVERED,
+      - FAILED_TO_DELIVER,
+      - PREPARED_TO_DELIVER,
+      - RETRYING_TO_DELIVER,
+      - TARGET_IDENTIFIED,
+      - ERRORS_IDENTIFIED
+  version:
+    type: string

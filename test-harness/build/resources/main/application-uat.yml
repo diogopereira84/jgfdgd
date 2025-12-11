@@ -1,0 +1,160 @@
+logging:
+  level:
+    aero.sita.messaging:
+      mercury: DEBUG
+      mercury.libraries.common.messaging.kafka: WARN
+      mercury.utilities:
+        testharness: WARN
+        testharness.service.performance: WARN
+    com:
+      ibm.mq: WARN
+      azure: WARN
+    org:
+      apache.kafka: WARN
+      mongodb: WARN
+      springframework:
+        jms: WARN
+        kafka: WARN
+        web: WARN
+        data: WARN
+
+ibm-mq:
+  servers:
+    - id: ${IBM_MQ_HOSTNAME}(1414)
+      hostname: ${IBM_MQ_HOSTNAME}
+      port: 1414
+      queue-manager: QM1
+      channel: APP.SVRCONN
+      user: ${IBM_MQ_USERNAME}
+      password: ${IBM_MQ_PASSWORD}
+      connections:
+        - id: BOCR10
+          inbound-queue-name: BOCR10.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: ADXH01
+          inbound-queue-name: ADXH01.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: AS02
+          inbound-queue-name: AS02.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: ATXH
+          inbound-queue-name: ATXH.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: BI7X
+          inbound-queue-name: BI7X.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: BI7X2
+          inbound-queue-name: BI7X2.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: BOCR6
+          inbound-queue-name: BOCR6.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: BOCR7
+          inbound-queue-name: BOCR7.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: BOCR8
+          inbound-queue-name: BOCR8.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: BOCR9
+          inbound-queue-name: BOCR9.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: EB5
+          inbound-queue-name: EB5.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: HPXH1
+          inbound-queue-name: HPXH1.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: JD7X2
+          inbound-queue-name: JD7X2.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: MCXS1
+          inbound-queue-name: MCXS1.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: RM7X
+          inbound-queue-name: RM7X.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: RS7X
+          inbound-queue-name: RS7X.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: SDCR1
+          inbound-queue-name: SDCR1.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: TEX43
+          inbound-queue-name: TEX43.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: TI7X1
+          inbound-queue-name: TI7X1.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: TK10
+          inbound-queue-name: TK10.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: VF01
+          inbound-queue-name: VF01.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: VF01
+          inbound-queue-name: VF01.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: VS1
+          inbound-queue-name: VS1.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: VS3
+          inbound-queue-name: VS3.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: X3
+          inbound-queue-name: X3.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: Y68X01
+          inbound-queue-name: Y68X01.OUT
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED

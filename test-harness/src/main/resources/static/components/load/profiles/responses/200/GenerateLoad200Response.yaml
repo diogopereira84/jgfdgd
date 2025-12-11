@@ -1,0 +1,9 @@
+description: Message load has been generated successfully based on criteria in the LoadProfile
+content:
+  application/json:
+    schema:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Unique identifier of the group of messages generated

@@ -1,0 +1,14 @@
+type: object
+required:
+  - server
+  - port
+  - destinationNames
+properties:
+  server:
+    type: string
+  port:
+    type: integer
+  destinationNames:
+    type: array
+    items:
+      type: string

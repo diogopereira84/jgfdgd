@@ -1,0 +1,6 @@
+value:
+  destinationsDetailsList:
+    - server: localhost
+      port: 1414
+      destinationNames:
+        - DEV.QUEUE.2

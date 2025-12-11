@@ -1,0 +1,20 @@
+type: object
+required:
+  - message
+  - server
+  - port
+  - queueManager
+  - destinationNames
+properties:
+  message:
+    type: string
+  server:
+    type: string
+  port:
+    type: integer
+  queueManager:
+    type: string
+  destinationNames:
+    type: array
+    items:
+      type: string

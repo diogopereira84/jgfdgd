@@ -1,0 +1,18 @@
+type: object
+properties:
+  type:
+    type: string
+    enum:
+      - DAL
+      - SAL
+      - NAL
+  cityCode:
+    type: string
+  departmentCode:
+    type: string
+  companyCode:
+    type: string
+  address:
+    type: string
+  order:
+    type: integer

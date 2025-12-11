@@ -1,0 +1,3 @@
+value:
+  - field: foo
+    message: Must not be empty

@@ -1,0 +1,19 @@
+value:
+  incomingEvent:
+    header:
+      messageId: '1'
+      connectionId: '1'
+      correlationId: a57f4600-4ea7-4348-9eb0-6327fa2b99ca
+      receivedDateTime: '2025-04-30T16:10:35Z'
+      receivedProtocol: IBM_MQ
+      incomingFormat: TYPE_B
+      status: RECEIVED
+      version: v1.0
+    payload:
+      rawData: "\x01QP BARXTXS\n .HDQRMJU 281440/160B99PSA\n \x02AVS\n JU0580L30AUG LA BEGBCN\n \x03"
+      possibleDuplicate: false
+    metadata:
+      priority: '1'
+  topics:
+    - evh-foo
+    - evh-bar

@@ -1,0 +1,23 @@
+type: object
+required:
+  - nal
+  - origin
+properties:
+  nal:
+    type: array
+    items:
+      type: string
+  origin:
+    type: array
+    items:
+      type: string
+  priority:
+    type: array
+    items:
+      type: string
+  size:
+    type: array
+    items:
+      type: string
+  count:
+    type: integer

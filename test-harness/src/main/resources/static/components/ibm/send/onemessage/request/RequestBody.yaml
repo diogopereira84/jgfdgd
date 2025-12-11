@@ -1,0 +1,21 @@
+description: Message and ibm queue destination details.
+required: true
+content:
+  application/json:
+    schema:
+      $ref: schemas/Request.yaml
+    examples:
+      OneServerOneDestinationNames:
+        $ref: examples/OneServerOneDestinationNames.yaml
+      TypeXOneServerOneDestinationNames:
+        $ref: examples/TypeXOneServerOneDestinationNames.yaml
+      OneServerMultipleDestinationNames:
+        $ref: examples/OneServerMultipleDestinationNames.yaml
+      MultipleServersOneDestinationNames:
+        $ref: examples/MultipleServersOneDestinationNames.yaml
+      MultipleServersMultipleDestinationNames:
+        $ref: examples/MultipleServersMultipleDestinationNames.yaml
+      DevOneServerOneDestinationNames:
+        $ref: examples/dev/OneServerOneDestinationNames.yaml
+      DevTypeXOneServerOneDestinationNames:
+        $ref: examples/dev/TypeXOneServerOneDestinationNames.yaml

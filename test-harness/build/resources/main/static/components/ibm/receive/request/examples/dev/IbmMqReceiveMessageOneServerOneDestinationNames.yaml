@@ -1,0 +1,7 @@
+summary: "[DEV] IbmMqReceiveMessageOneServerOneDestinationNames"
+value:
+  destinationsDetailsList:
+    - server: 10.84.116.165
+      port: 1414
+      destinationNames:
+        - DEV.QUEUE.2

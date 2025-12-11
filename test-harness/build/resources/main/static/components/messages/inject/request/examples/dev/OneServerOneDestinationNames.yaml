@@ -1,0 +1,9 @@
+summary: "[DEV] OneServerOneDestinationNames"
+value:
+  destinationsDetailsList:
+    - server: 10.84.116.165
+      port: 1414
+      destinationNames:
+        - "DEV.QUEUE.1"
+  loadProfileId: 1
+  preLoad: true

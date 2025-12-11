@@ -1,0 +1,15 @@
+description: >-
+  Accepted. This status code is returned when some messages are successfully
+  sent, but others fail. If all messages are received successfully, the response
+  will be a 200 OK.
+content:
+  application/json:
+    schema:
+      type: array
+      items:
+        $ref: schemas/DestinationAndMessagesWithErrors.yaml
+    examples:
+      ServerNotPreConfigured:
+        $ref: examples/202ServerNotPreConfiguredReceiveMessageResponseIbmMq.yaml
+      QueueNotPreConfigured:
+        $ref: examples/202AcceptedQueueNotPreConfiguredReceiveMessageResponseIbmMq.yaml

@@ -1,0 +1,50 @@
+plugins {
+    id 'org.springframework.boot' version "${springBootVersion}"
+    id 'application'
+    id 'com.google.cloud.tools.jib'
+}
+
+ext {
+    sl4jMockVersion = '2.4.0'
+    restAssuredVersion = '5.5.0'
+    springDocVersion = '2.8.6'
+    dockerImage = "${acrAddress}/test-harness:${pipelineVersion}"
+}
+
+apply from: "${rootDir}/jib-common.gradle"
+
+dependencies {
+    implementation project(":libraries:common")
+    implementation project(":libraries:dispatcher-starter")
+    implementation project(":libraries:shared-models")
+
+    implementation "co.elastic.logging:logback-ecs-encoder:${logbackEcsEncoderVersion}"
+    implementation "com.ibm.mq:mq-jms-spring-boot-starter:${mqJmsSpringBootStarterVersion}"
+    implementation "org.awaitility:awaitility:${awaitilityVersion}"
+    implementation "org.mapstruct:mapstruct:${mapstructVersion}"
+    implementation "org.springdoc:springdoc-openapi-starter-webmvc-ui:${springDocVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-data-mongodb:${springMongodbVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-log4j2:${springBootVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-validation:${springBootVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+    implementation "org.springframework.cloud:spring-cloud-starter-openfeign:${openFeignVersion}"
+    implementation "org.springframework.kafka:spring-kafka:${springKafkaVersion}"
+
+    annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+
+    testImplementation project(":libraries:test-utility")
+
+    testImplementation "io.rest-assured:rest-assured:${restAssuredVersion}"
+    testImplementation "io.rest-assured:spring-mock-mvc:${restAssuredVersion}"
+    testImplementation "org.simplify4u:slf4j2-mock:${sl4jMockVersion}"
+    testImplementation "org.springframework.boot:spring-boot-testcontainers:${springBootTestContainersVersion}"
+    testImplementation "org.testcontainers:junit-jupiter:${testContainersJupiterVersion}"
+    testImplementation "org.testcontainers:kafka:${testContainersJupiterVersion}"
+    testImplementation "org.testcontainers:mongodb:${testContainersJupiterVersion}"
+
+    modules {
+        module("org.springframework.boot:spring-boot-starter-logging") {
+            replacedBy("org.springframework.boot:spring-boot-starter-log4j2")
+        }
+    }
+}

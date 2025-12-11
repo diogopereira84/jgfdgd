@@ -1,0 +1,8 @@
+value:
+  message: "\r\n\u0001QP LKYSOLT\r\n.HDQRMJU 281440/160B99PSA\r\n\u0002AVS\r\nJU0580L30AUG LA BEGBCN\r\n\r\n\u0003"
+  destinationsDetailsList:
+    - server: localhost
+      port: 1414
+      queueManager: QM1
+      destinationNames:
+        - DEV.QUEUE.1

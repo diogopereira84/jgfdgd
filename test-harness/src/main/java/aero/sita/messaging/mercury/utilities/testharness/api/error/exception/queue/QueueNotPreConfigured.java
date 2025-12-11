@@ -1,0 +1,19 @@
+/*
+ * This code contains copyright information which is the proprietary property
+ * of SITA Information Network Computing Limited (SITA). No part of this
+ * code may be reproduced, stored or transmitted in any form without the prior
+ * written permission of SITA.
+ * Copyright © SITA Information Networking Computing Ireland Limited 2020-2025.
+ * Confidential. All rights reserved.
+ */
+
+package aero.sita.messaging.mercury.utilities.testharness.api.error.exception.queue;
+
+import static java.lang.String.format;
+
+public class QueueNotPreConfigured extends RuntimeException {
+
+  public QueueNotPreConfigured(String server, String queueName) {
+    super(format("The queue %s on server %s is not pre-configured to be listened to.", queueName, server));
+  }
+}

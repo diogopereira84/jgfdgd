@@ -1,0 +1,16 @@
+description: Ok
+content:
+  application/json:
+    schema:
+      type: array
+      items:
+        $ref: schemas/DestinationAndMessages.yaml
+    examples:
+      200OkIbmMqReceiveMessageOneServerOneDestinationNames:
+        $ref: examples/200OkIbmMqReceiveMessageOneServerOneDestinationNames.yaml
+      200OkIbmMqReceiveMessageOneServerMultipleDestinationNames:
+        $ref: examples/200OkIbmMqReceiveMessageOneServerMultipleDestinationNames.yaml
+      200OkIbmMqReceiveMessageMultipleServersOneDestinationNames:
+        $ref: examples/200OkIbmMqReceiveMessageMultipleServersOneDestinationNames.yaml
+      200OkIbmMqReceiveMessageMultipleServersMultipleDestinationNames:
+        $ref: examples/200OkIbmMqReceiveMessageMultipleServersMultipleDestinationNames.yaml

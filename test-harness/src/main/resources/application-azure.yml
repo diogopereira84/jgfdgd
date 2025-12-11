@@ -1,0 +1,34 @@
+spring:
+  data:
+    mongodb:
+      uri: ${TEST_HARNESS_DB_CONNECTION_STRING}
+      database: test-harness-${PROFILE}
+      auto-index-creation: false
+
+messaging:
+  kafka:
+    connection-string: ${EVENT_HUBS_HOSTNAME}:9093
+    properties:
+      security.protocol: SASL_SSL
+      sasl.mechanism: PLAIN
+      sasl.jaas.config: org.apache.kafka.common.security.plain.PlainLoginModule required username="$ConnectionString" password="${EVENT_HUBS_CONNECTION_STRING}";
+  service-bus:
+    connection-string: ${SERVICE_BUS_CONNECTION_STRING}
+    consumer:
+      max-concurrent-sessions: 50
+      non-session-max-concurrent-calls: 100
+      session-prefetch-count: ${SESSION_PREFETCH_COUNT:40}
+      non-session-prefetch-count: ${NON_SESSION_PREFETCH_COUNT:20}
+  topics:
+    connection-command:
+      name: evh-messaging-mercury-connection-command-v1-${PROFILE}
+    connection-notification:
+      name: evh-messaging-mercury-connection-notification-v1-${PROFILE}
+      subscription-id: test-harness
+    incoming:
+      name: sb-messaging-mercury-incoming-v1-${PROFILE}
+      subscription-id: test-harness
+
+orchestrator:
+  client:
+    base-url: ${ORCHESTRATOR_HOSTNAME}/orchestrator

@@ -1,0 +1,10 @@
+description: Bad Request
+content:
+  application/json:
+    schema:
+      type: array
+      items:
+        $ref: ../../schemas/Error.yaml
+    examples:
+      400InvalidField:
+        $ref: examples/InvalidField.yaml

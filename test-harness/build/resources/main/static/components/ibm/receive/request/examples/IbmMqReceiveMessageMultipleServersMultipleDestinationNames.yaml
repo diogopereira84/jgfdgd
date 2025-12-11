@@ -1,0 +1,12 @@
+value:
+  destinationsDetailsList:
+    - server: localhost
+      port: 1414
+      destinationNames:
+        - DEV.QUEUE.2
+        - LKYSOLT.IN
+    - server: localhost
+      port: 4141
+      destinationNames:
+        - DEV.QUEUE.2
+        - LKYSOLT.IN

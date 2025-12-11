@@ -1,0 +1,13 @@
+type: object
+required:
+  - event
+  - topics
+properties:
+  incomingEvent:
+    $ref: ./IncomingEventDto.yaml
+  outgoingEvent:
+    $ref: ./OutgoingEventDto.yaml
+  topics:
+    type: array
+    items:
+      type: string

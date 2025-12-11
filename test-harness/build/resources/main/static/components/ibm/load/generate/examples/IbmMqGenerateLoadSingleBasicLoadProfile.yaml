@@ -1,0 +1,14 @@
+value:
+  loadProfile:
+    name: Test LoadProfile
+    description: Test LoadProfile Description
+    profiles:
+      - nal:
+          - BARXTXS
+        origin:
+          - HDQRMJU
+        priority:
+          - QD
+        size:
+          - MEDIUM
+        count: 3

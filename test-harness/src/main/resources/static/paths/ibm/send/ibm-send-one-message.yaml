@@ -1,0 +1,33 @@
+post:
+  tags:
+    - IBM MQ
+  description: >
+    This endpoint is responsible for sending a message to one or multiple IBM MQ
+    servers and queues. 
+
+    The message will be sent as it is, without any transformation. 
+
+    If the MQ server is not reachable or the queue does not exist, a status code
+    202 will 
+
+    be returned. However, if the MQ server is up and running and the queue
+    exists, 
+
+    the only responsibility of this endpoint is to deliver the message. What
+    happens after delivery is not the 
+
+    responsibility of this endpoint.
+
+
+  operationId: ibmMqSendMessageOneMessage
+  requestBody:
+    $ref: ../../../components/ibm/send/onemessage/request/RequestBody.yaml
+  responses:
+    '200':
+      $ref: ../../../components/common/responses/200/200OkResponse.yaml
+    '202':
+      $ref: ../../../components/ibm/send/responses/202/202AcceptedSendMessageResponseIbmMq.yaml
+    '400':
+      $ref: ../../../components/common/responses/400/400ErrorResponse.yaml
+    '500':
+      $ref: ../../../components/common/responses/500/500ErrorResponse.yaml

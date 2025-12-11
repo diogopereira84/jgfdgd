@@ -1,0 +1,10 @@
+description: Generated Messages Not Found
+content:
+  application/json:
+    schema:
+      type: array
+      items:
+        $ref: ../../../../common/schemas/Error.yaml
+    examples:
+      404 Not Found:
+        $ref: examples/GeneratedMessagesNotFoundForProfile.yaml

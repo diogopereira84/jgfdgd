@@ -1,0 +1,12 @@
+description: Message load has not been generated due to a Bad Request. Check the validity of the LoadProfile provided.
+content:
+  application/json:
+    schema:
+      type: array
+      items:
+        $ref: ../../../../../common/schemas/Error.yaml
+    examples:
+      400InvalidNAL:
+        $ref: ./examples/InvalidFieldNAL.yaml
+      400InvalidOrigin:
+        $ref: ./examples/InvalidFieldOrigin.yaml

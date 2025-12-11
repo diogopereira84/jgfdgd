@@ -1,0 +1,105 @@
+logging:
+  level:
+    aero.sita.messaging:
+      mercury: DEBUG
+      mercury.libraries.common.messaging.kafka: WARN
+      mercury.utilities:
+        testharness: WARN
+        testharness.service.performance: WARN
+    com:
+      ibm.mq: WARN
+      azure: WARN
+    org:
+      apache.kafka: WARN
+      mongodb: WARN
+      springframework:
+        jms: WARN
+        kafka: WARN
+        web: WARN
+        data: WARN
+
+ibm-mq:
+  servers: # only 1 server supported initially
+    - id: ${IBM_MQ_HOSTNAME}(1414)
+      hostname: ${IBM_MQ_HOSTNAME}
+      port: 1414
+      queue-manager: QM1
+      channel: APP.SVRCONN
+      user: ${IBM_MQ_USERNAME}
+      password: ${IBM_MQ_PASSWORD}
+      connections:
+        - id: connection2
+          inbound-queue-name: DEV.QUEUE.3
+          concurrency-min: 1
+          concurrency-max: 1
+          state: ENABLED
+        - id: lab-connection1
+          inbound-queue-name: LKYSOLT.IN
+          state: ENABLED
+          concurrency-min: 1
+          concurrency-max: 1
+        - id: lab-connection2
+          inbound-queue-name: LKYEDLT.IN
+          state: ENABLED
+          concurrency-min: 1
+          concurrency-max: 1
+        - id: lab-connection3
+          inbound-queue-name: LKYEGLT.IN
+          state: ENABLED
+          concurrency-min: 1
+          concurrency-max: 1
+        - id: lab-connection4
+          inbound-queue-name: LETKJLK.IN
+          state: ENABLED
+          concurrency-min: 1
+          concurrency-max: 1
+        - id: lab-connection5
+          inbound-queue-name: LETJPLK.IN
+          state: ENABLED
+          concurrency-min: 1
+          concurrency-max: 1
+        - id: lab-connection6
+          inbound-queue-name: LETBCLK.IN
+          state: ENABLED
+          concurrency-min: 1
+          concurrency-max: 1
+        - id: connectionA
+          inbound-queue-name: LETTTLK.IN
+          state: ENABLED
+          concurrency-min: 1
+          concurrency-max: 1
+        - id: connectionB
+          inbound-queue-name: LETRRLK.IN
+          state: ENABLED
+          concurrency-min: 1
+          concurrency-max: 1
+        - id: connectionC
+          inbound-queue-name: LETVVLK.IN
+          state: ENABLED
+          concurrency-min: 1
+          concurrency-max: 1
+        - id: connectionD
+          inbound-queue-name: LETCCLK.IN
+          state: ENABLED
+          concurrency-min: 1
+          concurrency-max: 1
+        - id: connectionE
+          inbound-queue-name: LETDDLK.IN
+          state: ENABLED
+          concurrency-min: 1
+          concurrency-max: 1
+        - id: connectionF
+          inbound-queue-name: LETRDLK.IN
+          state: ENABLED
+          concurrency-min: 1
+          concurrency-max: 1
+        - id: tx-connection1
+          inbound-queue-name: LETTXLK.IN
+          state: ENABLED
+          concurrency-min: 1
+          concurrency-max: 1
+        - id: tx-connection2
+          inbound-queue-name: LETXSLK.IN
+          state: ENABLED
+          concurrency-min: 1
+          concurrency-max: 1

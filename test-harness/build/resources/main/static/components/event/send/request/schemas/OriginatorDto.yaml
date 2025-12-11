@@ -1,0 +1,10 @@
+type: object
+properties:
+  cityCode:
+    type: string
+  departmentCode:
+    type: string
+  companyCode:
+    type: string
+  address:
+    type: string

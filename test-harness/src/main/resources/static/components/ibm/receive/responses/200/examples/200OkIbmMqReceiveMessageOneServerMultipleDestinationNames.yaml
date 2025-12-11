@@ -1,0 +1,10 @@
+value:
+  - server: localhost
+    port: 1414
+    messageDetailsList:
+      - destinationName: DEV.QUEUE.1
+        messages:
+          - "\r\n\x01QP LKYEGLT\r\n.HDQRMJU 281440/160B99PSA\r\n\x02AVS\r\nJU0580L30AUG LA BEGBCN\r\n\r\n\x03"
+      - destinationName: DEV.QUEUE.2
+        messages:
+          - "\r\n\x01QK LETKJLK\r\n.HDQRMJU 281440/160B99PSA\r\n\x02AVS\r\nTEST TEST\r\n\r\n\x03"

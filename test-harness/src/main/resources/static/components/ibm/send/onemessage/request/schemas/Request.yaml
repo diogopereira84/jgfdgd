@@ -1,0 +1,13 @@
+type: object
+properties:
+  destinationsDetailsList:
+    type: array
+    items:
+      $ref: ./DestinationDetailsWithMessage.yaml
+example:
+  destinationsDetailsList:
+    - server: localhost
+      port: 1414
+      queueManager: QM1
+      destinationNames:
+        - DEV.QUEUE.1

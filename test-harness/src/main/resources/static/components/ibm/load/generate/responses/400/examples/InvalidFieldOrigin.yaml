@@ -1,0 +1,3 @@
+value:
+  - field: loadProfile[0].origin
+    message: Origin is required

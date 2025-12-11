@@ -1,3 +1,0 @@
-value:
-  field: destinationsDetailsList[0].server
-  message: must not be empty

@@ -1,6 +1,0 @@
-value:
-  - message: Not able to connect to server localhost:9092
-  - message: Topic evh-foo does not exist
-  - message: >-
-      Some unexpected error occur when sending event to topic a in server b
-      exception message: some_error

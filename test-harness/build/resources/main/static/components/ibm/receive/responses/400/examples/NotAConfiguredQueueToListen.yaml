@@ -1,4 +1,0 @@
-value:
-  - message: >-
-      The queue foo on server localhost(1414) is not pre-configured to be
-      listened to.

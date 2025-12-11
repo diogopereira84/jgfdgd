@@ -1,8 +1,0 @@
-type: object
-required:
-  - destinationsDetailsList
-properties:
-  destinationsDetailsList:
-    type: array
-    items:
-      $ref: ../../../../common/schemas/ibm/DestinationDetails.yaml

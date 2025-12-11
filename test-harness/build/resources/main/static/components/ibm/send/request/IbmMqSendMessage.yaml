@@ -1,6 +1,0 @@
-description: Message and ibm queue destination details.
-required: true
-content:
-  multipart/form-data:
-    schema:
-      $ref: schemas/IbmMqSendMessageMultipartRequest.yaml

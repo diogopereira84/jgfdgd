@@ -1,9 +1,0 @@
-summary: "[DEV] TypeXOneServerOneDestinationNames"
-value:
-  message: "<txme:TXM_Envelope TxmRelease=\"TXM2009A0\" xmlns:txme=\"http://www.iata.org/txm/envelope\" xmlns:txmm=\"http://www.iata.org/txm/msgheader\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><txme:TXM_Header><txme:TXM_BodyHeader><txmm:TXM_MessageHeader TxmRelease=\"TXM2009A0\"><Information><MessageId><TypeXAddress><TYPEX_Address><Airline>XS</Airline><City>QXT</City><Department>XS</Department></TYPEX_Address></TypeXAddress><OriginDate>2015-09-21</OriginDate><OriginTime>18:59:30Z</OriginTime><Number>1</Number></MessageId></Information><Originator><OriginatorAddress><TYPEX_Address><Airline>AY</Airline><City>HEL</City><Department>AX</Department></TYPEX_Address></OriginatorAddress></Originator><Destination><RecipientInformation><ResponsibilityFlag>Yes</ResponsibilityFlag><ActionType>TO</ActionType><DestinationAddress><TYPEX_Address><Airline>XH</Airline><City>DUB</City><Department>SK</Department></TYPEX_Address></DestinationAddress></RecipientInformation></Destination></txmm:TXM_MessageHeader></txme:TXM_BodyHeader></txme:TXM_Header><txme:TXM_Body><txme:TXM_Payload><FreeText>This is a Simple TYPE-X Message</FreeText></txme:TXM_Payload></txme:TXM_Body></txme:TXM_Envelope>"
-  destinationsDetailsList:
-    - server: 10.84.116.165
-      port: 1414
-      queueManager: QM1
-      destinationNames:
-        - LETTXLK.OUT

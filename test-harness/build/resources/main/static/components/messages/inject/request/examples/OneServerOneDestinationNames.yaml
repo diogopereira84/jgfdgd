@@ -1,8 +1,0 @@
-value:
-  destinationsDetailsList:
-    - server: localhost
-      port: 1414
-      destinationNames:
-        - "DEV.QUEUE.1"
-  loadProfileId: 1
-  preLoad: true
